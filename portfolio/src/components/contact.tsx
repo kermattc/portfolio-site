@@ -2,7 +2,7 @@
 export default function Contact() {
     return (
         <div>
-            Contact page
+            <h3>Contact section</h3>
         </div>
     )
 }

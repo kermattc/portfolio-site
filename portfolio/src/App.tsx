@@ -1,71 +1,61 @@
-import { Routes, Route, Outlet, Link } from 'react-router-dom';
+import { useRef } from 'react';
+import './App.css';
 
+import Home from './components/home';
 import About from './components/about';
-import Projects from './components/projects';
 import Contact from './components/contact';
+import Projects from './components/projects';
+import Navbar from './components/navbar';
 
 export default function App() {
-  return (
-    <>
-      <Routes>
-        <Route path='/' element={<Layout/>}>
-        <Route index element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/projects' element={<Projects/>}/>
-        <Route path='/contact' element={<Contact/>}/>
+  const home = useRef<HTMLDivElement>(null);
+  const about = useRef<HTMLDivElement>(null);
+  const projects = useRef<HTMLDivElement>(null);
+  const contact = useRef<HTMLDivElement>(null);
+
+  const scrollToSection = (section: string): void => {
+      switch (section) {
+        case 'home':
+          home.current?.scrollIntoView({ behavior: 'smooth'});
+          break;
+        case 'about':
+          about.current?.scrollIntoView({ behavior: 'smooth'});
+          break;
+        case 'projects':
+          projects.current?.scrollIntoView({ behavior: 'smooth'});
+          break;
+        case 'contact':
+          contact.current?.scrollIntoView({ behavior: 'smooth'});
+          break;
         
-        {/* For routes that isn't defined */ }
-        <Route path="*" element={<NoMatch />}/>
-        
-        </Route>
-        
-      </Routes>
-    </>
-  );
-}
+        default:
+          break;
+      }
+  }
 
-function Layout() {
   return (
-    <div>      
-      <nav>
-        <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/about'>About</Link>
-          </li>
-          <li>
-            <Link to='/projects'>Projects</Link>
-          </li>
-          <li>
-            <Link to='/contact'>Contact</Link>
-          </li>
-        </ul>
-      </nav>
+    <div className="App">
 
-      {/* <hr/> */}
-      <Outlet/>
-
-    </div>
-  )
-}
-
-function Home() {
-  return (
-    <div>
-      Home page
-    </div>
-  )
-}
-
-function NoMatch() {
-  return (
-    <div>
-      Sorry, nothing to see here!
-      <div>
-        <Link to='/'>Go back to home page</Link>
+      <div className='main'>
+        <Navbar scrollToSection={scrollToSection} testyMcTestTest='testy mc test test'/> {/* Note that functions need to be wrapped in {} */} 
       </div>
+
+      <div className='content'>
+
+        <div ref={home} className='home'>
+            <Home/>
+        </div>
+        <div ref={about} className='about'>
+          <About/>
+        </div>
+        <div ref={projects} className='projects'>
+          <Projects/>
+        </div>
+        <div ref={contact} className='contact'>
+          <Contact/>
+        </div>
+      </div>
+
     </div>
-  )
+  );
 }

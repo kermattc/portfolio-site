@@ -42,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "@types/smoothscroll-polyfill": "^0.3.4",
     "ajv": "^8.16.0"
   }
 }
