@@ -1,0 +1,15 @@
+{
+    "projects": [ 
+        {
+            "title" : "Projecty 1 Mc testy test",
+            "description" : "Descripty 1 Mc descripty test",
+            "thumbnail": "Thumbnail 1 mc thumbanily test"
+        },
+     
+        {
+            "title" : "Projecty 2 Mc testy test",
+            "description" : "Descripty 2 Mc descripty test",
+            "thumbnail": "Thumbnail 2 Mc thumbanily test"
+        }
+    ]
+}

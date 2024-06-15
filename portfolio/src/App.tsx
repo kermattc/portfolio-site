@@ -7,6 +7,7 @@ import Contact from './components/contact';
 import Projects from './components/projects';
 import Navbar from './components/navbar';
 
+
 export default function App() {
   const home = useRef<HTMLDivElement>(null);
   const about = useRef<HTMLDivElement>(null);

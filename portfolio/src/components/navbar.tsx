@@ -6,8 +6,8 @@ interface NavbarProps {
 }
 
 // two ways of doing this. But just keep in mind to specify the props and their types. also for some reason people hate React.FC, might look into it later
-const Navbar: React.FC<NavbarProps> = ({ scrollToSection, testyMcTestTest }) => {
-// export const Navbar = ( {scrollToSection, temp }: NavbarProps) => {
+// const Navbar: React.FC<NavbarProps> = ({ scrollToSection, testyMcTestTest }) => {
+export const Navbar = ( {scrollToSection, testyMcTestTest }: NavbarProps) => {
     return(
         <>
             <h1>M.S. in Computer Science | Aspiring Software Engineer</h1>
