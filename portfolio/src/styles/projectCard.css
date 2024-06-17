@@ -1,0 +1,54 @@
+.projectContainer,
+.projectCard,
+.projectCard-hovered {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 15px;
+    /* margin: 10px; */
+}
+
+.projectContainer {
+    /* text-align: left;
+    display: flex;
+    flex-direction: row; */
+    /* justify-content: center; */
+}
+
+.projectCard {
+    border: 1px solid transparent; 
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.projectCard-hovered {
+    cursor: pointer;
+    border: 1px solid #3366CC; 
+    background-color: rgba(221, 226, 237, 0.1);
+}
+
+.left-details {
+    flex: 1
+}
+
+.right-details {
+    /* width: 100%; */
+    flex: 1;
+}
+
+.projectCard-hovered div,
+.projectCard-hovered p,
+.projectCard-hovered h2
+{
+/* .projectCard-hovered p { */
+    color: #99CCFF;
+    background-color: transparent;
+
+}
+
+.left-details h2,
+.left-details p,
+.right-details p {
+    margin: 0;
+}
