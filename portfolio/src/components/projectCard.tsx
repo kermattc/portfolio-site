@@ -1,18 +1,25 @@
 import './../styles/projectCard.css';
-
 import { useState } from 'react';
 
 interface ProjectCardProps {
     title: string,
     description: string,
     timeline: string,
-    thumbnail: string
+    thumbnail: string,
+    link: string
 }
 
-const ProjectCard = ( { title, description, timeline, thumbnail}: ProjectCardProps ) => {
-    
+const images: { [key:string]: string} = {
+    'mscThumbnail': require('./../figures/msc-thumbnail.png'),
+    'tempThumbnail': require('./../figures/bc-thumbnail.png')
+}
+
+const ProjectCard = ( { title, description, timeline, thumbnail, link}: ProjectCardProps ) => {
+
     const [isHovered, setIsHovered] = useState<boolean>(false);
-    
+
+    const pcThumbnail = images[thumbnail]
+
     function cardEnter(event: React.MouseEvent<HTMLDivElement>) {
     // function cardEnter(event: any) {
         setIsHovered(true);
@@ -23,8 +30,13 @@ const ProjectCard = ( { title, description, timeline, thumbnail}: ProjectCardPro
         setIsHovered(false);
     }
 
+    function openInNewTab(): void {
+        // window.location.href =link;
+        window.open(link, "_blnk", "noreferrer");
+    }
+
     return (
-        <div className='projectContainer'>
+        <div className='projectContainer' onClick={() => openInNewTab()}>
             <div className={isHovered ? 'projectCard-hovered' : 'projectCard'} 
                 onMouseEnter={(e) => cardEnter(e)} 
                 onMouseLeave={(e) => cardLeave(e)}
@@ -35,7 +47,7 @@ const ProjectCard = ( { title, description, timeline, thumbnail}: ProjectCardPro
                 </div>
                 <div className='right-details'>
                     <p>{timeline}</p>
-                    <img src="/figures/msc-thumbnail.png" alt="Thumbnail"/>
+                    {pcThumbnail ? <img className='thumbnail' src={pcThumbnail} alt={`${thumbnail} fig`} /> : null}
                 </div>
             </div>
         </div>
@@ -43,3 +55,4 @@ const ProjectCard = ( { title, description, timeline, thumbnail}: ProjectCardPro
 }
 
 export default ProjectCard;
+

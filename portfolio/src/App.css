@@ -23,18 +23,22 @@
 
 .home {
     height: 600px;
+    display: flex;
 }
 
 .about {
-    height: 600px;
+    /* height: 600px; */
+    display: flex;
 }
 
 .projects {
-    height: 600px;
+    /* height: 600px; */
+    display: flex;
 }
 
 .contact {
-    height: 600px;
+    /* height: 600px; */
+    display: flex;
 }
 
 *, html {

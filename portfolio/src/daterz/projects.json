@@ -2,16 +2,18 @@
     "projects": [ 
         {
             "title" : "Projecty 1 Mc testy test",
-            "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            "description" : "Description for project 1, Description for project 1, Description for project 1, Description for project 1, Description for project 1, Description for project 1, Description for project 1, Description for project 1, Description for project 1",
             "timeline": "Sept 2021 - March 2024",
-            "thumbnail": "msg-thumbnail.png"
+            "thumbnail": "mscThumbnail",
+            "link": "https://ontariotechu.scholaris.ca/items/3978146b-2028-48cd-bb68-6f136c4bd216"
         },
      
         {
             "title" : "Projecty 2 Mc testy test",
-            "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            "description" : "Description for project 2, Description for project 2, Description for project 2",
             "timeline": "Sept 2016 - April 2021",
-            "thumbnail": "Thumbnail 2 Mc thumbanily test"
+            "thumbnail": "tempThumbnail",
+            "link": "http://vialabdev.science.ontariotechu.ca/wp-content/publication_media/pdf/cha2020a.pdf"
         }
     ]
 }

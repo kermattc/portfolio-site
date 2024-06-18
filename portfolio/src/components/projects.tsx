@@ -6,7 +6,8 @@ interface Project {
     title: string,
     description: string,
     timeline: string,
-    thumbnail: string
+    thumbnail: string,
+    link: string
 }
 
 const projects: Project[] = projectData.projects;
@@ -26,6 +27,7 @@ export default function Projects() {
                             timeline={project.timeline}
                             description={project.description} 
                             thumbnail={project.thumbnail}
+                            link={project.link}
                         />
                     )
                 })

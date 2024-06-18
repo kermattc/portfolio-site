@@ -28,15 +28,6 @@
     background-color: rgba(221, 226, 237, 0.1);
 }
 
-.left-details {
-    flex: 1
-}
-
-.right-details {
-    /* width: 100%; */
-    flex: 1;
-}
-
 .projectCard-hovered div,
 .projectCard-hovered p,
 .projectCard-hovered h2
@@ -47,8 +38,34 @@
 
 }
 
+.left-details {
+    flex: 1;
+    padding-right: 10px;
+}
+
 .left-details h2,
 .left-details p,
 .right-details p {
     margin: 0;
+    padding: 5px;
+}
+
+
+.right-details {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.right-details p {
+    padding-bottom: 10px;
+}
+
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
 }
