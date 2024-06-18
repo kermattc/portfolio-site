@@ -5,6 +5,7 @@ import Home from './components/home';
 import About from './components/about';
 import Contact from './components/contact';
 import Projects from './components/projects';
+import Theses from './components/theses';
 import Navbar from './components/navbar';
 
 
@@ -12,9 +13,11 @@ export default function App() {
   const home = useRef<HTMLDivElement>(null);
   const about = useRef<HTMLDivElement>(null);
   const projects = useRef<HTMLDivElement>(null);
+  const theses = useRef<HTMLDivElement>(null);
   const contact = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (section: string): void => {
+    console.log('Scrolling to section: ', section)
       switch (section) {
         case 'home':
           home.current?.scrollIntoView({ behavior: 'smooth'});
@@ -24,6 +27,9 @@ export default function App() {
           break;
         case 'projects':
           projects.current?.scrollIntoView({ behavior: 'smooth'});
+          break;
+        case 'theses':
+          theses.current?.scrollIntoView({ behavior: 'smooth'});
           break;
         case 'contact':
           contact.current?.scrollIntoView({ behavior: 'smooth'});
@@ -43,14 +49,17 @@ export default function App() {
 
       <div className='content'>
 
-        <div ref={home} className='home'>
+        {/* <div ref={home} className='home'>
             <Home/>
-        </div>
+        </div> */}
         <div ref={about} className='about'>
           <About/>
         </div>
         <div ref={projects} className='projects'>
           <Projects/>
+        </div>
+        <div ref={theses} className='theses'>
+          <Theses/>
         </div>
         <div ref={contact} className='contact'>
           <Contact/>

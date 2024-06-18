@@ -1,19 +1,26 @@
 {
     "projects": [ 
         {
-            "title" : "Projecty 1 Mc testy test",
-            "description" : "Description for project 1, Description for project 1, Description for project 1, Description for project 1, Description for project 1, Description for project 1, Description for project 1, Description for project 1, Description for project 1",
-            "timeline": "Sept 2021 - March 2024",
-            "thumbnail": "mscThumbnail",
-            "link": "https://ontariotechu.scholaris.ca/items/3978146b-2028-48cd-bb68-6f136c4bd216"
+            "title" : "TODO Web App",
+            "description": "Full stack web app for adding, editing and deleting todo reminders. Deployed on AWS EC2 for public access.",
+            "timeline": "June 2024",
+            "thumbnail": "perntodoThumbnail",
+            "link": "http://3.133.148.52/"
         },
      
         {
-            "title" : "Projecty 2 Mc testy test",
-            "description" : "Description for project 2, Description for project 2, Description for project 2",
-            "timeline": "Sept 2016 - April 2021",
-            "thumbnail": "tempThumbnail",
-            "link": "http://vialabdev.science.ontariotechu.ca/wp-content/publication_media/pdf/cha2020a.pdf"
+            "title" : "Holiday Checker",
+            "description" : "React web app that displays the upcoming Canadian holiday. Implemented via single component, added over-the-top styling for memorable user experience.",
+            "timeline": "May 2024",
+            "thumbnail": "gooseThumbnail",
+            "link": "http://holiday-checker.s3-website.us-east-2.amazonaws.com/"
+        },
+        {
+            "title" : "Baseball Stats Website",
+            "description" : "My first full stack web app. Fetches and displays selected player baseball data from public API, front-end deployed on AWS S3 storage. Back-end includes login session via JWT.",
+            "timeline": "April 2024 - May 2024",
+            "thumbnail": "baseballThumbnail",
+            "link": "http://baseball-stats-bucket.s3-website.us-east-2.amazonaws.com/"
         }
     ]
 }

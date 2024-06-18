@@ -11,7 +11,11 @@ interface ProjectCardProps {
 
 const images: { [key:string]: string} = {
     'mscThumbnail': require('./../figures/msc-thumbnail.png'),
-    'tempThumbnail': require('./../figures/bc-thumbnail.png')
+    'bscThumbnail': require('./../figures/bc-thumbnail.png'),
+    'perntodoThumbnail': require('./../figures/perntodo-thumbnail.png'),
+    'gooseThumbnail': require('./../figures/goose-thumbnail.png'),
+    'baseballThumbnail': require('./../figures/baseball-stats-thumbnail.png'),
+
 }
 
 const ProjectCard = ( { title, description, timeline, thumbnail, link}: ProjectCardProps ) => {

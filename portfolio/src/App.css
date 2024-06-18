@@ -1,6 +1,7 @@
 .App {
     text-align: center;
     display: flex;
+    width: 105%;
 }
 
 .link {
@@ -21,6 +22,13 @@
     margin-left: 40%;
   }
 
+
+
+.projects, .theses, .contact {
+    /* margin: 100px; */
+    width: 105%;
+}
+
 .home {
     height: 600px;
     display: flex;
@@ -29,9 +37,16 @@
 .about {
     /* height: 600px; */
     display: flex;
+    text-align: left;
 }
 
 .projects {
+    /* height: 600px; */
+    display: flex;
+    text-align: left;
+}
+
+.theses {
     /* height: 600px; */
     display: flex;
 }
@@ -41,10 +56,15 @@
     display: flex;
 }
 
+.navbar {
+    width: 125%;
+}
+
 *, html {
     scroll-behavior: smooth !important;
     font-family: "Rubik", sans-serif;
     background: #333333;
+    margin: 25px;
 }
 
 * {
