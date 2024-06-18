@@ -1,3 +1,5 @@
+import './../App.css'
+
 interface NavbarProps {
     scrollToSection: (section: string) => void;
     testyMcTestTest: string
@@ -27,7 +29,6 @@ export const Navbar = ( {scrollToSection, testyMcTestTest }: NavbarProps) => {
                 Contact
             </li>
             </ul>
-            
         </div>
     )
 }

@@ -1,25 +1,25 @@
-.projectContainer,
 .projectCard,
 .projectCard-hovered {
     text-align: left;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    /* flex-direction: column; */
+    justify-content: left;
     border-radius: 15px;
     padding: 15px;
     /* margin: 10px; */
 }
 
 .projectContainer {
-    /* text-align: left;
     display: flex;
-    flex-direction: row; */
-    /* justify-content: center; */
+    flex-direction: column;
+    max-width: 1200%;
+    margin: 0 auto;
 }
 
 .projectCard {
     border: 1px solid transparent; 
     transition: border-color 0.2s, color 0.2s;
+    /* flex-direction: row; */
 }
 
 .projectCard-hovered {
@@ -44,28 +44,29 @@
 
 .left-details {
     flex: 1;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 .left-details h2,
 .left-details p,
 .right-details p {
     margin: 0;
-    padding: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
 }
 
 
 .right-details {
-    flex: 0.5;
+    flex: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    padding-bottom: 5px;
 }
 
 .right-details p {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 

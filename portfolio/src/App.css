@@ -22,11 +22,9 @@
     margin-left: 40%;
   }
 
-
-
 .projects, .theses, .contact {
     /* margin: 100px; */
-    width: 105%;
+    /* width: 105%; */
 }
 
 .home {
@@ -41,9 +39,8 @@
 }
 
 .projects {
-    /* height: 600px; */
     display: flex;
-    text-align: left;
+    justify-content: left;
 }
 
 .theses {
@@ -69,4 +66,16 @@
 
 * {
     color: #f5f8ff;
+}
+
+h2 {
+    font-weight: 400;
+}
+p {
+    font-weight: 100;
+}
+
+.navbar li {
+    font-weight: lighter;
+    /* color: blue; */
 }

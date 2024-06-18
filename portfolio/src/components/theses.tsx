@@ -13,9 +13,8 @@ interface Project {
 const theses: Project[] = thesisData.theses;
 
 export default function Theses() {
-    console.log("Theses: ", theses);
     return (
-        <div>
+        <div className='projectContainer'>
             <h3>Placeholder title - Thesis section</h3>
             {                
                 theses.map((thesis, index) => {

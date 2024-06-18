@@ -16,7 +16,7 @@ export default function Projects() {
     // console.log("Project data: ", projects);
     
     return (
-        <div>
+        <div className='projectContainer'>
             <h3>Placeholder title - Projects section</h3>
             {                
                 projects.map((project, index) => {
