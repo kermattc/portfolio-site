@@ -2,10 +2,11 @@
     "projects": [ 
         {
             "title" : "TODO Web App",
-            "description": "Full stack web app for adding, editing and deleting todo reminders. Deployed on AWS EC2 for public access.",
+            "description": "Full stack web app for adding, editing and deleting todo reminders. Deployed on AWS EC2 for public access and containerized via Docker.",
             "timeline": "June 2024",
             "thumbnail": "perntodoThumbnail",
-            "link": "http://3.133.148.52/"
+            "link": "http://3.133.148.52/",
+            "skills": ["React", "NodeJS", "PostgreSQL", "AWS", "Docker"]
         },
      
         {
@@ -13,14 +14,16 @@
             "description" : "React web app that displays the upcoming Canadian holiday. Implemented via single component, added over-the-top styling for memorable user experience.",
             "timeline": "May 2024",
             "thumbnail": "gooseThumbnail",
-            "link": "http://holiday-checker.s3-website.us-east-2.amazonaws.com/"
+            "link": "http://holiday-checker.s3-website.us-east-2.amazonaws.com/",
+            "skills": ["React", "AWS", "SCSS"]
         },
         {
             "title" : "Baseball Stats Website",
             "description" : "My first full stack web app. Fetches and displays selected player baseball data from public API, front-end deployed on AWS S3 storage. Back-end includes login session via JWT.",
             "timeline": "April 2024 - May 2024",
             "thumbnail": "baseballThumbnail",
-            "link": "http://baseball-stats-bucket.s3-website.us-east-2.amazonaws.com/"
+            "link": "http://baseball-stats-bucket.s3-website.us-east-2.amazonaws.com/",
+            "skills": ["React", "Redux", "AWS", "NodeJS", "JWT", "MongoDB", "Python"]
         }
     ]
 }

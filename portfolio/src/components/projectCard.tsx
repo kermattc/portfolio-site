@@ -1,4 +1,5 @@
 import './../styles/projectCard.css';
+import SkillsNugget from './skillsNugget';
 import { useState } from 'react';
 
 interface ProjectCardProps {
@@ -6,7 +7,8 @@ interface ProjectCardProps {
     description: string,
     timeline: string,
     thumbnail: string,
-    link: string
+    link: string,
+    skills: string[]
 }
 
 const images: { [key:string]: string} = {
@@ -17,7 +19,7 @@ const images: { [key:string]: string} = {
     'baseballThumbnail': require('./../figures/baseball-stats-thumbnail.png'),
 }
 
-const ProjectCard = ( { title, description, timeline, thumbnail, link}: ProjectCardProps ) => {
+const ProjectCard = ( { title, description, timeline, thumbnail, link, skills}: ProjectCardProps ) => {
 
     const [isHovered, setIsHovered] = useState<boolean>(false);
 
@@ -44,13 +46,18 @@ const ProjectCard = ( { title, description, timeline, thumbnail, link}: ProjectC
                 onMouseEnter={(e) => cardEnter(e)} 
                 onMouseLeave={(e) => cardLeave(e)}
             >
-                <div className='left-details'>
-                    <h2>{title}</h2>
-                    <p>{description}</p>
+                <div className='detailsContainer'>
+                    <div className='left-details'>
+                        <h2>{title}</h2>
+                        <p>{description}</p>
+                    </div>
+                    <div className='right-details'>
+                        <p>{timeline}</p>
+                        {pcThumbnail ? <img className='thumbnail' src={pcThumbnail} alt={`${thumbnail} fig`} /> : null}
+                    </div>
                 </div>
-                <div className='right-details'>
-                    <p>{timeline}</p>
-                    {pcThumbnail ? <img className='thumbnail' src={pcThumbnail} alt={`${thumbnail} fig`} /> : null}
+                <div className='skillsContainer'>
+                    <SkillsNugget skills={skills}/>
                 </div>
             </div>
         </div>
