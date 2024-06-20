@@ -1,0 +1,133 @@
+.App {
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+
+.about, .projects, .theses, .contact {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+
+.link, .link-viewed {
+    text-decoration: none;
+    padding: 20px 20px;
+    font-weight: 700;
+    font-size: large;
+    background-color: #222326;
+
+}
+
+.link-viewed {
+    font-weight: 400;
+    color: #3366CC;
+}
+
+.main, .navbar, .navbar > h1, .navbar > h2, .navbar > ul {
+    background-color: #222326;
+}
+
+.main {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 30%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+.aboutContainer, .projectContainer{
+    display: flex;
+    flex-direction: column; 
+} 
+
+.projectContainer {
+    align-items: center;
+} 
+
+.projectTitle, .aboutTitle, .thesesTitle {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+*, html {
+    scroll-behavior: smooth !important;
+    font-family: "Rubik", sans-serif;
+    background: #333333;
+}
+
+html {
+    margin: 25px;
+    height: 100%;
+}
+
+* {
+    color: #f5f8ff;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 100;
+}
+
+.navbar li {
+    font-weight: lighter;
+}
+
+li:hover {
+    cursor: pointer;
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* might mess around with this later for mobile devices
+ @media (max-width: 768px) {
+    .main {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+} */
