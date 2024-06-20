@@ -1,7 +1,7 @@
 {
     "theses": [ 
         {
-            "title" : "MSc Thesis - Characterizing Midair Handwriting in VR",
+            "title" : "MSc Thesis - Characterizing Midair Handwriting in Virtual Reality",
             "description": "Predicted ink placement when writing in midair and investigated how people prefer to write in midair. Developed a VR data-gathering application to use in human experiments. Then performed data processing and analysis, which led to training 72 models to predict the intention of midair handwriting. Resulted in overall 85% accuracy.",
             "timeline": "Sept 2021 - March 2024",
             "thumbnail": "mscThumbnail",
@@ -10,7 +10,7 @@
         },
      
         {
-            "title" : "Angle Dependent Visualization and Interaction of Data in Augmented Reality",
+            "title" : "BSc Thesis - Angle Dependent Visualization and Interaction of Data in Augmented Reality",
             "description" : "Mobile AR data visualization application with novel angle-dependent interaction methods.",
             "timeline": "Sept 2016 - April 2021",
             "thumbnail": "bscThumbnail",

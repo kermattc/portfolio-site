@@ -1,7 +1,9 @@
+import './../App.css'
 
 export default function About() {
     return (
-        <div>
+        <div className='aboutContainer'>
+            <h1 className='aboutTitle'>About Me</h1>
             <h2>
                 I'm passionate in programming and dedicated to creating innovative technologies, and developing effective solutions.
             </h2>
@@ -21,7 +23,6 @@ export default function About() {
             <p>
                 Outside of coding, I'm getting better at baseball, customizing keyboards and playing guitar.
             </p>
-
         </div>
     )
 }

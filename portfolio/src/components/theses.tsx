@@ -1,4 +1,5 @@
 import ProjectCard from "./projectCard";
+import './../App.css';
 
 import thesisData from '../daterz/thesis.json';
 
@@ -16,7 +17,7 @@ const theses: Project[] = thesisData.theses;
 export default function Theses() {
     return (
         <div className='projectContainer'>
-            <h3>Placeholder title - Thesis section</h3>
+            <h1 className='thesesTitle'>Thesis Projects</h1>
             {                
                 theses.map((thesis, index) => {
                     return(

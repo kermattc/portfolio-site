@@ -1,6 +1,6 @@
-import './../App.css'
+import './../styles/form.css'
 
-import { useState, useRef } from 'react'; 
+import { useState } from 'react'; 
 
 interface FormState {
     name: string;

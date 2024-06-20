@@ -1,4 +1,5 @@
 import ProjectCard from "./projectCard";
+import './../App.css'
 
 import projectData from './../daterz/projects.json';
 
@@ -18,7 +19,7 @@ export default function Projects() {
     
     return (
         <div className='projectContainer'>
-            <h3>Placeholder title - Projects section</h3>
+            <h1 className='projectTitle'>Projects</h1>
             {                
                 projects.map((project, index) => {
                     return(
