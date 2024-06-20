@@ -71,11 +71,41 @@
 h2 {
     font-weight: 400;
 }
+
 p {
     font-weight: 100;
 }
 
 .navbar li {
     font-weight: lighter;
-    /* color: blue; */
+}
+
+.formContainer {
+    margin: auto auto;
+}
+
+form {
+    padding: 50px;
+    border: 2px solid rgba(51, 102, 204, 0.5);
+    border-radius: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: auto auto;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: auto;
+    cursor: pointer;
+    padding: 10px 20px
 }

@@ -18,7 +18,7 @@
 
 .projectCard {
     border: 1px solid transparent; 
-    transition: border-color 0.2s, color 0.2s;
+    transition: border-color 0.3s, color 0.2s;
     /* flex-direction: row; */
 }
 
@@ -26,6 +26,7 @@
     cursor: pointer;
     border: 1px solid #3366CC; 
     background-color: rgba(221, 226, 237, 0.1);
+    transition: background-color 0.3s, color 0.2s;
 }
 
 .projectCard-hovered div,
@@ -73,12 +74,16 @@
 .thumbnail {
     width: 165px;
     height: 100px;
+    background-color: rgba(51, 102, 204, 0.5);
+    border-radius: 9px;
+    padding: 4px;
+    transition: background-color 0.3s, color 0.2s;
 }
+
 
 .detailsContainer {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     margin: 0;
     padding: 0;
 

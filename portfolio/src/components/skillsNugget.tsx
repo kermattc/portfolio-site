@@ -7,7 +7,7 @@ interface SkillsNuggetProps {
 
 const SkillsNugget = ( { skills } : SkillsNuggetProps ) => {
     
-    console.log("Skills from skills nuggets; ", skills)
+    // console.log("Skills from skills nuggets; ", skills)
     
     return (
         <>
