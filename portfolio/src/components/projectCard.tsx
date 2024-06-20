@@ -26,7 +26,6 @@ const ProjectCard = ( { title, description, timeline, thumbnail, link, skills}: 
     const pcThumbnail = images[thumbnail]
 
     function cardEnter(event: React.MouseEvent<HTMLDivElement>) {
-    // function cardEnter(event: any) {
         setIsHovered(true);
     }
 
@@ -36,7 +35,6 @@ const ProjectCard = ( { title, description, timeline, thumbnail, link, skills}: 
     }
 
     function openInNewTab(): void {
-        // window.location.href =link;
         window.open(link, "_blnk", "noreferrer");
     }
 
