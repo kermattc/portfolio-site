@@ -28,25 +28,21 @@
     border: 1px solid #3366CC; 
     background-color: rgba(221, 226, 237, 0.1);
     transition: background-color 0.3s, color 0.2s;
-    /* width: 100%; */
-    /* min-width: 1100px; */
-
 }
 
 .projectCard-hovered div,
-.projectCard-hovered h2
-{
+.projectCard-hovered h2,
+.projectCard-hovered .projectTimeline {
     color: #99CCFF;
     background-color: transparent;
-
 }
+
 
 .projectCard-hovered p {
     background-color: transparent;
 }
 
 .left-details {
-    /* flex: 1; */
     padding: 0px;
     width: 100%;
 }
@@ -71,7 +67,6 @@
 
 .right-details p {
     padding-bottom: 5px;
-    /* width: 100%; */
 }
 
 
@@ -87,11 +82,6 @@
 
 .detailsContainer {
     display: flex;
-    /* flex-direction: row; */
-    /* margin: 0; */
-    /* padding: 0; */
-    /* width: 100%; */
-
 }
 
 .skillsContainer {

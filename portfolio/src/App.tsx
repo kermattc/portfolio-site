@@ -7,13 +7,16 @@ import About from './components/about';
 import Contact from './components/contact';
 import Projects from './components/projects';
 import Theses from './components/theses';
+import Experience from './components/experience';
 import Navbar from './components/navbar';
+
 
 export default function App() {
   const home = useRef<HTMLDivElement>(null);
   const about = useRef<HTMLDivElement>(null);
   const projects = useRef<HTMLDivElement>(null);
   const theses = useRef<HTMLDivElement>(null);
+  const experience = useRef<HTMLDivElement>(null);
   const contact = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (section: string): void => {
@@ -31,6 +34,9 @@ export default function App() {
         case 'theses':
           theses.current?.scrollIntoView({ behavior: 'smooth'});
           break;
+        case 'experience':
+          experience.current?.scrollIntoView({ behavior: 'smooth'});
+          break;
         case 'contact':
           contact.current?.scrollIntoView({ behavior: 'smooth'});
           break;
@@ -44,6 +50,7 @@ export default function App() {
   const aboutInViewPort = useInViewPort(about, { threshold: 0.7 });
   const projectInViewPort = useInViewPort(projects, { threshold: 0.7 });
   const thesesInViewPort = useInViewPort(theses, { threshold: 0.7 });
+  const experienceInViewPort = useInViewPort(experience, { threshold: 0.7 });
   const contactInViewPort = useInViewPort(contact, { threshold: 0.7 });
 
   const [activeSection, setActiveSection] = useState<string>('');
@@ -55,12 +62,14 @@ export default function App() {
       setActiveSection('project');
     } else if (thesesInViewPort) {
       setActiveSection('theses');
+    } else if (experienceInViewPort) {
+      setActiveSection('experience');
     } else if (contactInViewPort) {
       setActiveSection('contact');
-    } else {
+    }  else {
       setActiveSection('');
     }
-  }, [aboutInViewPort, projectInViewPort, thesesInViewPort, contactInViewPort])
+  }, [aboutInViewPort, projectInViewPort, thesesInViewPort, experienceInViewPort, contactInViewPort])
 
   return (
     <div className="App">
@@ -81,6 +90,9 @@ export default function App() {
         </div>
         <div ref={theses} className='theses'>
           <Theses/>
+        </div>
+        <div ref={experience} className='experience'>
+          <Experience/>
         </div>
         <div ref={contact} className='contact'>
           <Contact/>
