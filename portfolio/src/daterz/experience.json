@@ -1,0 +1,20 @@
+{
+    "experience": [ 
+        {
+            "title" : "Research Assistant",
+            "description": ["I did this", "I did that"],
+            "timeline": "May 2021 - August 2021, June 2024 - Present"
+        },
+     
+        {
+            "title" : "Teaching Assitant",
+            "description" : [""],
+            "timeline": "September 2021 - December 2022"
+        },
+        {
+            "title" : "IT Deskside Support",
+            "description" : [""],
+            "timeline": "September 2019 - August 2020"
+        }
+    ]
+}

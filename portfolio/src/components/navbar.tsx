@@ -29,8 +29,7 @@ export const Navbar = ( {scrollToSection, testyMcTestTest, activeSection }: Navb
                 <h1>Matthew Chan</h1>
                 <h2>MSc. Computer Science</h2>
                 <ul>
-                <li className={activeSection === 'about' ? 'link-viewed': 'link'} onClick={() => scrollToSection('about')}
-                >
+                <li className={activeSection === 'about' ? 'link-viewed': 'link'} onClick={() => scrollToSection('about')}>
                     About
                 </li>
                 <li className={activeSection === 'project' ? 'link-viewed': 'link'} onClick={() => scrollToSection('projects')}>
@@ -40,6 +39,9 @@ export const Navbar = ( {scrollToSection, testyMcTestTest, activeSection }: Navb
                     Theses
                 </li>
                 <li className={activeSection === 'contact' ? 'link-viewed': 'link'} onClick={() => scrollToSection('contact')}>
+                    Experience
+                </li>
+                <li className={activeSection === 'experience' ? 'link-viewed': 'link'} onClick={() => scrollToSection('experience')}>
                     Contact
                 </li>
                 </ul>
