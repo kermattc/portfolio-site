@@ -2,20 +2,20 @@
     "projects": [ 
         {
             "title" : "TODO Web App",
-            "description": "Full stack web app for adding, editing and deleting todo reminders. Deployed on AWS EC2 for public access and containerized via Docker.",
+            "description": "Full stack web app for adding, editing and deleting todo reminders. The backend is built using Node.js, utilizing a PostgreSQL database for CRUD operations. The full web application is deployed on AWS EC2 for public access. Lastly I containerized the frontend, backend and database via Docker. The frontend is based off of a tutorial from freecodecamp.",
             "timeline": "June 2024",
             "thumbnail": "perntodoThumbnail",
             "link": "http://3.133.148.52/",
-            "skills": ["React", "NodeJS", "PostgreSQL", "AWS", "Docker", "Nginx"]
+            "skills": ["React", "NodeJS", "PostgreSQL", "AWS - EC2", "Docker", "Nginx"]
         },
      
         {
             "title" : "Holiday Checker",
-            "description" : "React web app that displays the upcoming Canadian holiday. Implemented via single component, added over-the-top styling for memorable user experience.",
+            "description" : "Frontend only web app that displays the upcoming Canadian holiday. Implemented via single component and I added over-the-top styling for memorable user experience.",
             "timeline": "May 2024",
             "thumbnail": "gooseThumbnail",
             "link": "http://holiday-checker.s3-website.us-east-2.amazonaws.com/",
-            "skills": ["React", "AWS", "SCSS"]
+            "skills": ["React", "AWS - S3", "SCSS"]
         },
         {
             "title" : "Baseball Stats Website",
@@ -23,7 +23,7 @@
             "timeline": "April 2024 - May 2024",
             "thumbnail": "baseballThumbnail",
             "link": "http://baseball-stats-bucket.s3-website.us-east-2.amazonaws.com/",
-            "skills": ["React", "Redux", "AWS", "NodeJS", "JWT", "MongoDB", "Python"]
+            "skills": ["React", "Redux", "AWS - S3", "NodeJS", "JWT", "MongoDB", "Python"]
         }
     ]
 }

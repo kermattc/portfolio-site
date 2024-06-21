@@ -2,16 +2,16 @@
     "theses": [ 
         {
             "title" : "MSc Thesis - Characterizing Midair Handwriting in Virtual Reality",
-            "description": "Predicted ink placement when writing in midair and investigated how people prefer to write in midair. Developed a VR data-gathering application to use in human experiments. Then performed data processing and analysis, which led to training 72 models to predict the intention of midair handwriting. Resulted in overall 85% accuracy.",
+            "description": "Trained machine learning models to predict ink placement when writing in midair, and investigated how people prefer to write in the midair. I developed a VR data-gathering application where users can perform midair handwriting, which I later used in human experiments to gather midair handwriting data. Then I performed data processing and analysis, which led to training a total of 72 models to predict the intention of midair handwriting. Resulted in overall 85% accuracy. Lastly I performed qualitative analysis to see which methods people prefer to write in midair, as well as whether they prefer a virtual whtieboard as a form of assistance.",
             "timeline": "Sept 2021 - March 2024",
             "thumbnail": "mscThumbnail",
             "link": "https://ontariotechu.scholaris.ca/items/3978146b-2028-48cd-bb68-6f136c4bd216",
-            "skills": ["C#", "Unity", "Python", "Pandas", "NumPy", "Tensorflow", "AI", "VR"]
+            "skills": ["C#", "Unity", "Python", "Pandas", "NumPy", "Tensorflow", "AI", "Neural Networks", "VR"]
         },
      
         {
             "title" : "BSc Thesis - Angle Dependent Visualization and Interaction of Data in Augmented Reality",
-            "description" : "Mobile AR data visualization application with novel angle-dependent interaction methods.",
+            "description" : "Mobile AR data visualization application with novel angle-dependent interaction methods. Based on where the user is relative to the center visualizsation, the data points will appear different colours and tapping on them will highlight them different colours as well. Additionally, I implemented methods for tracking exploration history using the AR space.",
             "timeline": "Sept 2016 - April 2021",
             "thumbnail": "bscThumbnail",
             "link": "http://vialabdev.science.ontariotechu.ca/wp-content/publication_media/pdf/cha2020a.pdf",

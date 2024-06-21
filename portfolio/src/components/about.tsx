@@ -5,19 +5,20 @@ export default function About() {
         <div className='aboutContainer'>
             <h1 className='aboutTitle'>About Me</h1>
             <h2>
-                I'm passionate in programming and dedicated to creating innovative technologies, and developing effective solutions.
+                I'm an aspiring software engineer. I enjoy creating cool new technologies, and developing solutions.
             </h2>
             <p>
                 {/* I've developed applications for my research projects throughout my academic career. For my bachelor's thesis I developed a mobile AR data visualization application. And for my master's thesis I developed a data-gathering VR application, which I later used the data for machine learning. */}
-                I've developed applications for my research throughout my academic journey - including a mobile AR data visualization application for my bachelor's thesis and a VR data-gathering application for my master's thesis, which involved using the collected data for machine learning analysis.
+                I've developed applications for my research throughout my academic journey - 
+
+                including a VR data-gathering application for my master's thesis, which involved using the collected data for machine learning analysis and a mobile AR data visualization application for my bachelor's thesis.
                 After graduating, I decided to pursue full-stack development.
             </p>
 
             <p>
-                I'm always learning new technologies to improve my skillset. 
-                Nowadays I'm focused on React and Redux for frontend development, and NodeJS and Express for creating RESTful APIs. 
-                I've also integrated databases in my full stack applications, including PostgreSQL and MongoDB.
-                Lastly, I love showing off my projects to my friends by using AWS for its cloud services, and Docker for containerizing my apps. 
+                I'm always learning new technologies and concepts to improve my skillset. 
+                Nowadays, I'm practising developing full-stack applications using React and NodeJS, as well as integrating databases into my applications.
+                
             </p>
 
             <p>
