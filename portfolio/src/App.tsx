@@ -50,7 +50,7 @@ export default function App() {
   const aboutInViewPort = useInViewPort(about, { threshold: 0.7 });
   const projectInViewPort = useInViewPort(projects, { threshold: 0.7 });
   const thesesInViewPort = useInViewPort(theses, { threshold: 0.7 });
-  const experienceInViewPort = useInViewPort(theses, { threshold: 0.7 });
+  const experienceInViewPort = useInViewPort(experience, { threshold: 0.7 });
   const contactInViewPort = useInViewPort(contact, { threshold: 0.7 });
 
   const [activeSection, setActiveSection] = useState<string>('');
@@ -69,7 +69,7 @@ export default function App() {
     }  else {
       setActiveSection('');
     }
-  }, [aboutInViewPort, projectInViewPort, thesesInViewPort, contactInViewPort])
+  }, [aboutInViewPort, projectInViewPort, thesesInViewPort, experienceInViewPort, contactInViewPort])
 
   return (
     <div className="App">

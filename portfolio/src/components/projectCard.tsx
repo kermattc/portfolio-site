@@ -47,10 +47,10 @@ const ProjectCard = ( { title, description, timeline, thumbnail, link, skills}: 
                 <div className='detailsContainer'>
                     <div className='left-details'>
                         <h2>{title}</h2>
-                        <p>{description}</p>
+                        <p>{description}</p>    
                     </div>
                     <div className='right-details'>
-                        <p>{timeline}</p>
+                        <p className='projectTimeline'>{timeline}</p>
                         {pcThumbnail ? <img className='thumbnail' src={pcThumbnail} alt={`${thumbnail} fig`} /> : null}
                     </div>
                 </div>

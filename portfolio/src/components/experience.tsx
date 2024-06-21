@@ -1,10 +1,11 @@
 import './../App.css'
+import ExperienceCard from './experienceCard';
 
 import experienceData from './../daterz/experience.json';
 
 interface Experience {
     title: string;
-    description: string[];
+    descriptions: string[];
     timeline: string;
 }
 
@@ -15,12 +16,18 @@ export default function Experience() {
     return (
         <div className='experienceContainer'>
             <h1 className='experienceTitle'>Experience</h1>
-            {                
-                // experiences.map((experience, index)) => {
-                //     return(
-                //     )
-                // }
-            }
+                {                
+                    experiences.map((experience, index) => {
+                        return(
+                            <ExperienceCard
+                                key={index}
+                                title={experience.title}
+                                descriptions={experience.descriptions}
+                                timeline={experience.timeline}
+                            />
+                        )
+                    })
+                }
         </div>
     )
 }

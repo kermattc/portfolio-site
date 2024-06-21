@@ -38,10 +38,10 @@ export const Navbar = ( {scrollToSection, testyMcTestTest, activeSection }: Navb
                 <li className={activeSection === 'theses' ? 'link-viewed': 'link'} onClick={() => scrollToSection('theses')}>
                     Theses
                 </li>
-                <li className={activeSection === 'contact' ? 'link-viewed': 'link'} onClick={() => scrollToSection('contact')}>
+                <li className={activeSection === 'experience' ? 'link-viewed': 'link'} onClick={() => scrollToSection('experience')}>
                     Experience
                 </li>
-                <li className={activeSection === 'experience' ? 'link-viewed': 'link'} onClick={() => scrollToSection('experience')}>
+                <li className={activeSection === 'contact' ? 'link-viewed': 'link'} onClick={() => scrollToSection('contact')}>
                     Contact
                 </li>
                 </ul>

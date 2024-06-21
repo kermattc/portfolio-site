@@ -6,7 +6,7 @@
             "timeline": "June 2024",
             "thumbnail": "perntodoThumbnail",
             "link": "http://3.133.148.52/",
-            "skills": ["React", "NodeJS", "PostgreSQL", "AWS - EC2", "Docker", "Nginx"]
+            "skills": ["React", "NodeJS", "RESTful API", "PostgreSQL", "AWS - EC2", "Docker", "Nginx"]
         },
      
         {
@@ -23,7 +23,7 @@
             "timeline": "April 2024 - May 2024",
             "thumbnail": "baseballThumbnail",
             "link": "http://baseball-stats-bucket.s3-website.us-east-2.amazonaws.com/",
-            "skills": ["React", "Redux", "AWS - S3", "NodeJS", "JWT", "MongoDB", "Python"]
+            "skills": ["React", "Redux", "AWS - S3", "NodeJS", "RESTful API", "JWT", "MongoDB", "Python"]
         }
     ]
 }

@@ -1,19 +1,25 @@
 {
-    "experience": [ 
+    "experience": [
+        {
+            "title" : "Research Associate",
+            "descriptions": ["Assisted in running data-gathering experiment by organizing in-person scheduling and communication with participants.", "Provided clear description of requirements to participants and facilitated open communication to ensure smooth operation."],
+            "timeline": "June 2024 - Present"
+        },
+
         {
             "title" : "Research Assistant",
-            "description": ["I did this", "I did that"],
-            "timeline": "May 2021 - August 2021, June 2024 - Present"
+            "descriptions": ["Developed a mobile augmented reality data visualization application for iPhone and iPad using Swift and XCode for guided data exploration experience.", "Cooperated with team of researchers to communicate objectives, implemented features within deadlines."],
+            "timeline": "May 2021 - August 2021"
         },
      
         {
-            "title" : "Teaching Assitant",
-            "description" : [""],
+            "title" : "Teaching Assistant",
+            "descriptions" : ["Prepared and presented code and demos for multiple lab sessions to teach classes of 20-30 students relevant course content, answered student questions on an on-call basis to minimize student wait time.", "Marked midterms, assignemnts & weekly lab assignments, ensured deadlines for returning grades are met. Provided useful advice to students for lost marks and answered any inquiries to ensure students received necessary feedback to improve.", "TA for Programming Workshop (introductory C++ course), Web Application Development, Software Quality Assurance and Mobile Devices (Mobile Application Development)."],
             "timeline": "September 2021 - December 2022"
         },
         {
             "title" : "IT Deskside Support",
-            "description" : [""],
+            "descriptions" : ["Assisted clients with tech support in company building, contacted in person, phone call and email, made sure client systems kept running and continuously provided reliable tech support.", "Collaborated with multiple departments to identify cause of a problem when an elevator screen did not update due to construction damage, solved issue by locating damaged wire and issued repair.", "Maintained electronic hardware stock for company building, reduced wait times for clients to ensure productivity."],
             "timeline": "September 2019 - August 2020"
         }
     ]
