@@ -11,13 +11,11 @@ app.use(cors());
 
 app.post('/form', async(req, res) => {  
     try {
-        // console.log("Request: ", req.body);
         const params = {
             from_name: req.body.name,
             from_email: req.body.email,
             message: req.body.message
         }
-        console.log(process.env.TEMPLATE_ID)
         emailjs.send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, params, {
             publicKey: process.env.PUBLIC_KEY,
             privateKey: process.env.PRIVATE_KEY,
