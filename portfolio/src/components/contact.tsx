@@ -8,6 +8,17 @@ interface FormState {
     message: string;
 }
 
+// create new type of response error
+type ResponseData = {
+    id: string;
+    token: string;
+    error: string;
+  };
+
+interface ErrorRes {
+    json: () => Promise<ResponseData>;
+}
+
 export default function Contact() {
     const [formData, setFormData] = useState<FormState>({
         name: "", 
@@ -25,9 +36,28 @@ export default function Contact() {
         console.log("Name: ", name)
         setFormData(prevFormData => ({ ...prevFormData, [name]: value }));
     }
-    const handleSubmit = async (e: React.ChangeEvent<HTMLFormElement>) => {
+
+    const handleSubmit = async (e: React.ChangeEvent<HTMLFormElement>): Promise<ResponseData> => {
         e.preventDefault();
-        console.log("Form details: ", formData);
+        // console.log("Form details: ", formData);
+        try {
+            const response = await fetch('http://localhost:5000/form', {
+                method: 'POST',
+                headers: {'Content-Type': 'applications/json'},
+                body: JSON.stringify(formData)
+            }) 
+            return await response.json() as ResponseData;
+        } catch (error) {
+            if (error instanceof Response && error.json) {
+                return await error.json() as ResponseData;
+            } else {
+                return {
+                    id: '',
+                    token: '',
+                    error: 'An unexpected error occurred.'
+                } as ResponseData;
+            }
+        }   
     }
 
     return (
