@@ -14,11 +14,10 @@ var https = require('https');
 var fs = require('fs');
 
 var options = {
-    key: fs.readFileSync('/etc/letsencrypt/live/mattkchan.xyz/privkey.pem', 'utf8'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/mattkchan.xyz/fullchain.pem', 'utf8')
+    key: fs.readFileSync(`${process.env.KEY_PATH}`, 'utf8'),
+    cert: fs.readFileSync(`${process.env.CERT_PATH}`, 'utf8')
 }
-
-app.post('/form', async(req, res) => {
+app.post('/form', async(req, res) => {  
     try {
         const params = {
             from_name: req.body.name,
