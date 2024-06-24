@@ -1,7 +1,8 @@
 import { useRef, useEffect, useState } from 'react';
 import './App.css';
 import useInViewPort from './hooks/useOnScreen';
-import { FaAws } from "react-icons/fa6";
+import { FaA, FaAws } from "react-icons/fa6";
+import { FaBars } from "react-icons/fa6";
 
 import Home from './components/home';
 import About from './components/about';
@@ -83,7 +84,7 @@ export default function App() {
   const { windowWidth } = UseWindowDimensions();
 
   useEffect(()=> {
-    if (windowWidth > 768){
+    if (windowWidth > 805){
       setIsScreenSmol(false); 
       setIsNavbarVisible(true)
     } else {
@@ -95,24 +96,27 @@ export default function App() {
   return (
     <>
      <div className="App">
+
         {
           isScreenSmol ?          
-           
+
             <button 
               className="toggle-button"
               onClick={toggleNavbar}
             >
-            </button> :         
+              <FaBars  className='barsIcon'/>
+              </button> :         
           null
         } 
-          {isNavbarVisible && (
+          {
+            
             <div className={`main ${isNavbarVisible ? 'slide-in' : 'slide-out'}`}>
-            <Navbar scrollToSection={scrollToSection} testyMcTestTest='testymctesttest' activeSection={activeSection} />
-            <div className='awsContainer'>
-              Powered by AWS
-            </div>
+              <Navbar scrollToSection={scrollToSection} testyMcTestTest='testymctesttest' activeSection={activeSection} />
+              <div className='awsContainer'>
+                Powered by <FaAws className='awsIcon'/>
+              </div>
           </div>
-)}
+}
 
         <div className='content'>
          <div ref={about} className='about'>

@@ -18,6 +18,7 @@
     position: absolute;
     bottom: 0;
     margin-bottom: 5%;
+    /* width: 0%; */
     background-color: #222326;
     display: flex;
     align-items: center;
@@ -27,7 +28,7 @@
 .awsIcon {
     background-color: #222326;
     font-size: 200%;
-    padding: 10%;
+    padding: 5%;
 }
 
 .about, .projects, .theses, .experience {
@@ -56,8 +57,6 @@
     color: #3366CC;
     transition: color 0.3s;
 }
-
-
 
 .main, .navbar, .navbar > h1, .navbar > h2, .navbar > ul {
     background-color: #222326;
@@ -175,22 +174,22 @@ ul {
     visibility: hidden;
 }
 
-@media all and (max-width: 768px) {
+@media only screen and (max-width: 805px) and (orientation: portrait) {
     
     .toggle-button {
         visibility: visible;
         
         position: fixed;
-        z-index: 10;
-        top: 1%;
-        left: 2%;
-        padding: 2% 5%;
+        z-index: 2;
+        top: 2%;
+        left: 10%;
+        padding: 1% 1%;
         cursor: pointer;
-        background-color: #3366CC;
+        background-color: transparent;
+        /* background-color: #3366CC; */
         border: none;
         border-radius: 5px;
     }
-
 
     .main {
         position: fixed;
@@ -200,6 +199,9 @@ ul {
         transition: left 0.3s ease;
         z-index: 1;
         background-color: #222326;
+        align-items: flex-start;
+        padding-top: 15%;
+        justify-content: center;
     }
     
     .slide-in {
@@ -227,9 +229,47 @@ ul {
         padding: 1em;
     }
 
+    .main-text {
+        margin-top: 50%;
+    }
+
     .gitIcon, .linkedinIcon, .personIcon {
         font-size: 2em;
         margin-top: 0.5em;
     }
+
+    .awsContainer {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 50%;
+        background-color: #222326;
+    }
     
+    .awsIcon {
+        background-color: #222326;
+        font-size: 200%;
+        /* padding: 10%; */
+    }
+
+    .barsIcon {
+        font-size: 200%;
+        background-color: #3366CC;
+        padding: 15%;
+        border-radius: 25%;
+        /* background-color: transparent; */
+    }
+    .navbar {
+        /* margin-left: 5%; */
+        width: 100%;
+    }
+
+    .navbar ul {
+        padding-left: 0;
+    }
+
+    .navbar li {
+        font-weight: lighter;
+        padding: 10% 0;
+        margin-bottom: 2%;
+    }
 }
