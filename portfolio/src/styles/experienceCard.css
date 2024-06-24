@@ -11,17 +11,6 @@
 
 .experienceHeader > h2, .experienceHeader > p {
     color: #99CCFF;
-
-}
-
-.experienceTitle, .experienceTimeline {
-    /* width: 45%; */
-}
-
-
-.experienceTimeline {
-    /* display: flex; */
-    /* flex-direction: row-reverse; */
 }
 
 .experienceItem  {

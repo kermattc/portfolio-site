@@ -5,8 +5,8 @@
             "description": "Full stack web app for adding, editing and deleting todo reminders. The backend is built using Node.js, utilizing a PostgreSQL database for CRUD operations. The full web application is deployed on AWS EC2 for public access. Lastly I containerized the frontend, backend and database via Docker. The frontend is based off of a tutorial from freecodecamp.",
             "timeline": "June 2024",
             "thumbnail": "perntodoThumbnail",
-            "link": "http://3.133.148.52/",
-            "skills": ["React", "NodeJS", "RESTful API", "PostgreSQL", "AWS - EC2", "Docker", "Nginx"]
+            "link": "https://mattkchan.xyz/todo/",
+            "skills": ["React", "NodeJS", "RESTful API", "PostgreSQL", "AWS - EC2, Route 53", "Docker", "Nginx", "SSL"]
         },
      
         {
