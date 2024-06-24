@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const emailjs = require ('@emailjs/nodejs');
-const https = require('https');
 
 require('dotenv').config();
 
@@ -10,6 +9,14 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+var http = require('http');
+var https = require('https');
+var fs = require('fs');
+
+var options = {
+    key: fs.readFileSync(`${process.env.KEY_PATH}`, 'utf8'),
+    cert: fs.readFileSync(`${process.env.CERT_PATH}`, 'utf8')
+}
 app.post('/form', async(req, res) => {  
     try {
         const params = {
@@ -30,11 +37,10 @@ app.post('/form', async(req, res) => {
             res.status(500).json({ status: 500, message: "Failed to send email" });
         });
     } catch (error) {
-        console.error("Error: ", error.message);    
+        console.error("Error: ", error.message);
         res.status(500).json({ status: 500, message: "Internal Server Error" });    }
 })
 
+var httpsServer = https.createServer(options, app);
 
-app.listen(5001 , () => {
-    console.log("Server started on port 5001")
-})
+httpsServer.listen(5001);
