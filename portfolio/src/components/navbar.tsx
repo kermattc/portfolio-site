@@ -19,10 +19,6 @@ export const Navbar = ( {scrollToSection, testyMcTestTest, activeSection }: Navb
         window.open(link, "_blnk", "noreferrer");
     }
 
-    function openResumeInNewTab(link: string): void {
-        window.open(link, "_blank", "noreferrer");
-    }
-
     return(
         <div className='sidebar'>
             <div className='navbar'>
@@ -51,7 +47,6 @@ export const Navbar = ( {scrollToSection, testyMcTestTest, activeSection }: Navb
                 <BsGithub   className='gitIcon' onClick={() => openInNewTab(`https://github.com/kermattC`)}/>
                 <BsLinkedin  className='linkedinIcon' onClick={() => openInNewTab(`https://www.linkedin.com/in/kermattc/`)}/>
                 <BsFillFileEarmarkPersonFill className='personIcon' onClick={() => openInNewTab(`${process.env.PUBLIC_URL}/pdf/Matt_Resume.pdf`)}/>
-
             </div>
         </div>
     )

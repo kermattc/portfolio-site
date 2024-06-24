@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const emailjs = require ('@emailjs/nodejs');
+const https = require('https');
 
 require('dotenv').config();
 
@@ -20,20 +21,20 @@ app.post('/form', async(req, res) => {
             publicKey: process.env.PUBLIC_KEY,
             privateKey: process.env.PRIVATE_KEY,
         })
-            .then((response) => {
-                console.log("Email sent successfully:", response.status, response.text);
-                res.json({status: 200, message: "Email sent successfully" })
-            })
-            .catch((error) =>  {
-                console.error("Failed to send email: ", error);
-                res.status(500).json({ status: 500, message: "Failed to send email" });
-            });
+        .then((response) => {
+            console.log("Email sent successfully:", response.status, response.text);
+            res.json({status: 200, message: "Email sent successfully" })
+        })
+        .catch((error) =>  {
+            console.error("Failed to send email: ", error);
+            res.status(500).json({ status: 500, message: "Failed to send email" });
+        });
     } catch (error) {
         console.error("Error: ", error.message);    
         res.status(500).json({ status: 500, message: "Internal Server Error" });    }
 })
 
 
-app.listen(5000, () => {
-    console.log("Server started on port 5000")
+app.listen(5001 , () => {
+    console.log("Server started on port 5001")
 })

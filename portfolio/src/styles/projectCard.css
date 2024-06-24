@@ -3,29 +3,20 @@
     text-align: left;
     display: flex;
     flex-direction: column;
-    /* align-content: center; */
-    /* justify-content: left; */
-    border-radius: 15px;
-    padding: 12px 12px 12px 12px;
-    width: 1100px;
-    /* min-width: 1000px; */
-    /* margin: 10px; */
+    border-radius: 1em;
+    padding: 1em;
+    width: 100%;
 }
 
 .projectCard {
     display: flex;
-    border: 1px solid transparent; 
+    border: 0.1em solid transparent; 
     transition: border-color 0.3s, color 0.2s;
-    /* width: 100%; */
-    /* width: 100%; */
-    /* min-width: 1100px; */
-
-    /* flex-direction: row; */
 }
 
 .projectCard-hovered {
     cursor: pointer;
-    border: 1px solid #3366CC; 
+    border: 0.1em solid #3366CC; 
     background-color: rgba(221, 226, 237, 0.1);
     transition: background-color 0.3s, color 0.2s;
 }
@@ -43,16 +34,15 @@
 }
 
 .left-details {
-    padding: 0px;
     width: 100%;
 }
 
 .left-details h2,
 .left-details p,
 .right-details p {
-    margin: 5px;
-    padding-bottom: 5px;
-    padding-right: 5px;
+    margin: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
 }
 
 
@@ -62,20 +52,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 5px;
+    padding-bottom: 5%;
 }
 
 .right-details p {
-    padding-bottom: 5px;
+    padding-bottom: 5%;
 }
 
 
 .thumbnail {
     width: 165px;
-    height: 100px;
+    /* width: 100%;
+    max-width: 165px; */
+    height: auto;
     background-color: rgba(51, 102, 204, 0.5);
-    border-radius: 9px;
-    padding: 4px;
+    border-radius: 10%;
+    padding: 2%;
     transition: background-color 0.3s, color 0.2s;
 }
 
@@ -87,7 +79,7 @@
 .skillsContainer {
     display: flex;
     flex-direction: row;
-    /* width: 100%; */
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 

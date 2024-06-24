@@ -1,6 +1,8 @@
 import { useRef, useEffect, useState } from 'react';
 import './App.css';
-import useInViewPort from './components/useOnScreen';
+import useInViewPort from './hooks/useOnScreen';
+import { FaA, FaAws } from "react-icons/fa6";
+import { FaBars } from "react-icons/fa6";
 
 import Home from './components/home';
 import About from './components/about';
@@ -10,6 +12,7 @@ import Theses from './components/theses';
 import Experience from './components/experience';
 import Navbar from './components/navbar';
 
+import UseWindowDimensions from './hooks/getWindowDimensions';
 
 export default function App() {
   const home = useRef<HTMLDivElement>(null);
@@ -47,11 +50,11 @@ export default function App() {
   }
 
   // const targetRef = useRef<HTMLDivElement>(null);
-  const aboutInViewPort = useInViewPort(about, { threshold: 0.7 });
-  const projectInViewPort = useInViewPort(projects, { threshold: 0.7 });
-  const thesesInViewPort = useInViewPort(theses, { threshold: 0.7 });
-  const experienceInViewPort = useInViewPort(experience, { threshold: 0.7 });
-  const contactInViewPort = useInViewPort(contact, { threshold: 0.7 });
+  const aboutInViewPort = useInViewPort(about, { threshold: 0.2 });
+  const projectInViewPort = useInViewPort(projects, { threshold: 0.2 });
+  const thesesInViewPort = useInViewPort(theses, { threshold: 0.2 });
+  const experienceInViewPort = useInViewPort(experience, { threshold: 0.2 });
+  const contactInViewPort = useInViewPort(contact, { threshold: 0.2 });
 
   const [activeSection, setActiveSection] = useState<string>('');
 
@@ -66,39 +69,75 @@ export default function App() {
       setActiveSection('experience');
     } else if (contactInViewPort) {
       setActiveSection('contact');
-    }  else {
+    } else {
       setActiveSection('');
     }
   }, [aboutInViewPort, projectInViewPort, thesesInViewPort, experienceInViewPort, contactInViewPort])
 
+  const [isNavbarVisible, setIsNavbarVisible] = useState<boolean>(false);
+  const [isScreenSmol, setIsScreenSmol] = useState<boolean>(false);
+
+  const toggleNavbar = () => {
+    setIsNavbarVisible(!isNavbarVisible);
+  };
+
+  const { windowWidth } = UseWindowDimensions();
+
+  useEffect(()=> {
+    if (windowWidth > 805){
+      setIsScreenSmol(false); 
+      setIsNavbarVisible(true)
+    } else {
+      setIsScreenSmol(true);
+      setIsNavbarVisible(false);
+    }
+ },[windowWidth])
+
   return (
-    <div className="App">
-      <div className='main'>
-        <Navbar scrollToSection={scrollToSection} testyMcTestTest='testy mc test test' activeSection={activeSection}/> {/* Note that functions need to be wrapped in {} */} 
-      </div>
-      <div className='content'>
+    <>
+     <div className="App">
 
-        {/* <div ref={home} className='home'>
-            <Home/>
-        </div> */}
-        <div ref={about} className='about'>
-          <About/>
-        </div>
-        <div ref={projects} className='projects'        
-          >
-          <Projects/>
-        </div>
-        <div ref={theses} className='theses'>
-          <Theses/>
-        </div>
-        <div ref={experience} className='experience'>
-          <Experience/>
-        </div>
-        <div ref={contact} className='contact'>
-          <Contact/>
+        {
+          isScreenSmol ?          
+
+            <button 
+              className="toggle-button"
+              onClick={toggleNavbar}
+            >
+              <FaBars  className='barsIcon'/>
+              </button> :         
+          null
+        } 
+          {
+            
+            <div className={`main ${isNavbarVisible ? 'slide-in' : 'slide-out'}`}>
+              <Navbar scrollToSection={scrollToSection} testyMcTestTest='testymctesttest' activeSection={activeSection} />
+              <div className='awsContainer'>
+                Powered by <FaAws className='awsIcon'/>
+              </div>
+          </div>
+}
+
+        <div className='content'>
+         <div ref={about} className='about'>
+            <About/>
+          </div>
+          <div ref={projects} className='projects'        
+            >
+            <Projects/>
+          </div>
+          <div ref={theses} className='theses'>
+            <Theses/>
+          </div>
+          <div ref={experience} className='experience'>
+            <Experience/>
+          </div>
+          <div ref={contact} className='contact'>
+            <Contact/>
+          </div>
+
         </div>
       </div>
-
-    </div>
+    </>
   );
 }

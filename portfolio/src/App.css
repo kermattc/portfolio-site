@@ -4,16 +4,43 @@
     width: 100%;
 }
 
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar li {
+    font-weight: lighter;
+}
+
+
+.awsContainer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5%;
+    /* width: 0%; */
+    background-color: #222326;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.awsIcon {
+    background-color: #222326;
+    font-size: 200%;
+    padding: 5%;
+}
+
 .about, .projects, .theses, .experience {
     width: 100%;
-    margin-bottom: 25px;
-    padding: 15px;
+    margin-bottom: 1em;
+    padding: 1em;
 }
 
 .contact {
     width: 100%;
-    margin-bottom: 50px;
-    padding: 100px;
+    margin-bottom: 15%;
+    padding: 1em;
 }
 
 .link, .link-viewed {
@@ -59,7 +86,7 @@
 
 .aboutContainer, .projectContainer {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 } 
 
 .projectContainer {
@@ -69,17 +96,13 @@
 .projectTitle, .aboutTitle, .thesesTitle {
     text-align: left;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
 }
 
 .contact {
     display: flex;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: column;
-}
 
 *, html {
     scroll-behavior: smooth !important;
@@ -88,7 +111,7 @@
 }
 
 html {
-    margin: 25px;
+    margin: 1%;
     height: 100%;
 }
 
@@ -102,10 +125,6 @@ h2 {
 
 p {
     font-weight: 100;
-}
-
-.navbar li {
-    font-weight: lighter;
 }
 
 
@@ -122,19 +141,22 @@ ul {
 }
 
 .icons {
-    /* display: flex; */
-    padding: 50px;
+    display: flex;
+    /* padding: 15%; */
     background-color: #222326;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 
 .gitIcon, .linkedinIcon, .personIcon {
     background-color: #222326;
-    font-size: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 10px;
-    border-radius: 5px;
+    font-size: 3em;
+    margin-top: 0.25em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    padding: 1.5%;
+    border-radius: 25%;
 }
 
 .gitIcon:hover, .linkedinIcon:hover, .personIcon:hover {
@@ -145,25 +167,109 @@ ul {
 }
 
 .gitIcon:hover {
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
-/* might mess around with this later for mobile devices
- @media (max-width: 768px) {
-    .main {
-        width: 100%;
-        height: auto;
-        position: relative;
+.toggle-button {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 805px) and (orientation: portrait) {
+    
+    .toggle-button {
+        visibility: visible;
+        
+        position: fixed;
+        z-index: 2;
+        top: 2%;
+        left: 10%;
+        padding: 1% 1%;
+        cursor: pointer;
+        background-color: transparent;
+        /* background-color: #3366CC; */
+        border: none;
+        border-radius: 5px;
     }
 
-    .navbar {
+    .main {
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        left: -50%;
+        transition: left 0.3s ease;
+        z-index: 1;
+        background-color: #222326;
+        align-items: flex-start;
+        padding-top: 15%;
+        justify-content: center;
+    }
+    
+    .slide-in {
+        left: 0;
+        transition: left 0.3s ease;
+    }
+    
+    .slide-out {
+        left: -50%;
+        transition: left 0.3s ease;
+    }
+    
+    .sidebar {
+        width: 50%;
         flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
+        background-color: #222326;
+        align-items: center;
+        text-align: left;
     }
 
     .content {
         width: 100%;
+        margin-top: 5%;
         margin-left: 0;
+        padding: 1em;
     }
-} */
+
+    .main-text {
+        margin-top: 50%;
+    }
+
+    .gitIcon, .linkedinIcon, .personIcon {
+        font-size: 2em;
+        margin-top: 0.5em;
+    }
+
+    .awsContainer {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 50%;
+        background-color: #222326;
+    }
+    
+    .awsIcon {
+        background-color: #222326;
+        font-size: 200%;
+        /* padding: 10%; */
+    }
+
+    .barsIcon {
+        font-size: 200%;
+        background-color: #3366CC;
+        padding: 15%;
+        border-radius: 25%;
+        /* background-color: transparent; */
+    }
+    .navbar {
+        /* margin-left: 5%; */
+        width: 100%;
+    }
+
+    .navbar ul {
+        padding-left: 0;
+    }
+
+    .navbar li {
+        font-weight: lighter;
+        padding: 10% 0;
+        margin-bottom: 2%;
+    }
+}
