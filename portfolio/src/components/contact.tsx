@@ -16,10 +16,6 @@ type ResponseData = {
     error: string;
   };
 
-interface ErrorRes {
-    json: () => Promise<ResponseData>;
-}
-
 export default function Contact() {
     const [formData, setFormData] = useState<FormState>({
         name: "", 
@@ -52,8 +48,7 @@ export default function Contact() {
         await timeout(500);
 
         try {
-            const response = await fetch('https://mattkchan.xyz:5001/form', {
-            // const response = await fetch('http://localhost:5001/form', {
+            const response = await fetch('http://mattkchan.xyz:5001/form', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(formData)
@@ -137,7 +132,3 @@ export default function Contact() {
         </div>
     )
 }
-
-var https = require('https');
-var fs = require('fs');
-
