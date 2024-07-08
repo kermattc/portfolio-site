@@ -2,24 +2,24 @@
     "experience": [
         {
             "title" : "Research Associate",
-            "descriptions": ["Assisted in running data-gathering experiment by organizing in-person scheduling and communication with participants.", "Provided clear description of requirements to participants and facilitated open communication to ensure smooth operation."],
-            "timeline": "June 2024 - Present"
+            "descriptions": ["Managed data-gathering experiments, organized in-person scheduling and communication for efficient workflow.", "Provided clear requirements to participants and facilitated communication for smooth experiment operation."],
+            "timeline": "June 2024 - July 12, 2024"
         },
 
         {
             "title" : "Research Assistant",
-            "descriptions": ["Developed a mobile augmented reality data visualization application for iPhone and iPad using Swift and XCode for guided data exploration experience.", "Cooperated with team of researchers to communicate objectives, implemented features within deadlines."],
+            "descriptions": ["Developed a mobile augmented reality data visualization application for iPhone and iPad using Swift and XCode, enabling a guided data exploration experience.", "Collaborated with team of researchers to define objectives and implemented features within deadlines, ensuring effective communication and timely delivery."],
             "timeline": "May 2021 - August 2021"
         },
      
         {
             "title" : "Teaching Assistant",
-            "descriptions" : ["Prepared and presented code and demos for multiple lab sessions to teach classes of 20-30 students relevant course content, answered student questions on an on-call basis to minimize student wait time.", "Marked midterms, assignemnts & weekly lab assignments, ensured deadlines for returning grades are met. Provided useful advice to students for lost marks and answered any inquiries to ensure students received necessary feedback to improve.", "TA for Programming Workshop (introductory C++ course), Web Application Development, Software Quality Assurance and Mobile Devices (Mobile Application Development)."],
+            "descriptions" : ["Developed and presented code and demos for multiple lab sessions, taught classes of 20-30 students in programming and software development concepts. Provided on-call support to minimize student wait times for queries.", "Evaluated midterms, assignments and weekly lab tasks, ensuring timely return of grades and offering constructive feedback to help students improve.", "Assisted in courses including Programming Workshop (introductory C++ course), Web Application Development, Software Quality Assurance and Mobile Devices (Mobile application Development)"],
             "timeline": "September 2021 - December 2022"
         },
         {
             "title" : "IT Deskside Support",
-            "descriptions" : ["Assisted clients with tech support in company building, contacted in person, phone call and email, made sure client systems kept running and continuously provided reliable tech support.", "Collaborated with multiple departments to identify cause of a problem when an elevator screen did not update due to construction damage, solved issue by locating damaged wire and issued repair.", "Maintained electronic hardware stock for company building, reduced wait times for clients to ensure productivity."],
+            "descriptions" : ["Assisted clients with tech support in company building, communicated in person, phone call and email. Ensured client systems kept running and continuously through maintenance and responsive technical assistance in a customer support role.", "Collaborated with multiple departments to troubleshoot and resolve complex technical challenges, such as diagnosing and repairing a damaged wire impacting elevator screen updates due to construction.", "Managed and optimized electronic hardware inventory to minimize wait times for clients to ensure productivity."],
             "timeline": "September 2019 - August 2020"
         }
     ]
