@@ -1,6 +1,7 @@
 import './../styles/projectCard.css';
 import SkillsNugget from './skillsNugget';
 import { useState } from 'react';
+import Modal from './modal';
 
 interface ProjectCardProps {
     title: string,
@@ -22,6 +23,7 @@ const images: { [key:string]: string} = {
 const ProjectCard = ( { title, description, timeline, thumbnail, link, skills}: ProjectCardProps ) => {
 
     const [isHovered, setIsHovered] = useState<boolean>(false);
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
     const pcThumbnail = images[thumbnail]
 
@@ -34,12 +36,24 @@ const ProjectCard = ( { title, description, timeline, thumbnail, link, skills}: 
         setIsHovered(false);
     }
 
+    function openModal(): void {
+        setIsModalOpen(true);
+    }
+
+    // function closeModal(): void {
+    //     setIsOpenModal(false);
+    // }
+
     function openInNewTab(): void {
-        window.open(link, "_blnk", "noreferrer");
+        console.log("")
+        // window.open(link, "_blnk", "noreferrer");
     }
 
     return (
-        <div className='projectContainer' onClick={() => openInNewTab()}>
+        // <div className='projectContainer' onClick={() => openInNewTab()}>
+        
+        <>
+        <div className='projectContainer'  onClick={openModal}>
             <div className={isHovered ? 'projectCard-hovered' : 'projectCard'} 
                 onMouseEnter={(e) => cardEnter(e)} 
                 onMouseLeave={(e) => cardLeave(e)}
@@ -59,6 +73,12 @@ const ProjectCard = ( { title, description, timeline, thumbnail, link, skills}: 
                 </div>
             </div>
         </div>
+        { isModalOpen ? 
+            <Modal modalToggle={setIsModalOpen}/>
+            : 
+            null
+        }
+    </>
     )
 }
 
