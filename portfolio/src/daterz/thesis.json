@@ -6,6 +6,7 @@
             "timeline": "Sept 2021 - March 2024",
             "thumbnail": "mscThumbnail",
             "link": "https://ontariotechu.scholaris.ca/items/3978146b-2028-48cd-bb68-6f136c4bd216",
+            "demoLink": "https://www.youtube.com/embed/mw0fTrMSmI4?si=arkxBcAi41WthNhG",
             "skills": ["C#", "Unity", "Python", "Pandas", "NumPy", "TensorFlow", "AI", "Neural Networks", "VR"],
             "type": "thesis"
         },
@@ -16,6 +17,7 @@
             "timeline": "Sept 2016 - April 2021",
             "thumbnail": "bscThumbnail",
             "link": "http://vialabdev.science.ontariotechu.ca/wp-content/publication_media/pdf/cha2020a.pdf",
+            "demoLink": "https://www.youtube.com/embed/CyopLFzi12c?si=j3RJZwWSgwk6tQSD",
             "skills": ["Swift", "XCode", "iOS", "ARKit"],
             "type": "thesis"
         }

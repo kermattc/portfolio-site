@@ -9,6 +9,7 @@ interface Project {
     timeline: string,
     thumbnail: string,
     link: string,
+    demoLink: string,
     skills: string[],
     type: string
 }
@@ -31,6 +32,7 @@ export default function Projects() {
                             description={project.description} 
                             thumbnail={project.thumbnail}
                             link={project.link}
+                            demoLink={project.demoLink}
                             skills={project.skills}
                             type={project.type}
                         />

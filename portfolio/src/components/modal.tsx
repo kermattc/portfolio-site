@@ -6,10 +6,11 @@ import { useRef, useEffect } from 'react';
 
 interface ModalProps {
     modalToggle: (isModalOpen: boolean) => void,
-    openLink: () => void
+    openLink: () => void,
+    demoLink: string
 }
 
-const Modal = ({ modalToggle, openLink }: ModalProps) => {
+const Modal = ({ modalToggle, openLink, demoLink }: ModalProps) => {
     const modalRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -42,11 +43,11 @@ const Modal = ({ modalToggle, openLink }: ModalProps) => {
                         />
                 </div>
                 <div className='titleContainer'>
-                    <h1 className="modalTitle">Preview Demo</h1>
+                    <h1 className="modalTitle">Demo Video</h1>
                 </div>
                 <div className='body'>
                     <div className="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowFullScreen></iframe>
+                        <iframe src={demoLink} title="YouTube video" allowFullScreen></iframe>
                     </div>    
                 </div>
                 <div className="footer">

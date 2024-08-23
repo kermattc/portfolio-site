@@ -6,6 +6,7 @@
             "timeline": "June 2024",
             "thumbnail": "perntodoThumbnail",
             "link": "https://mattkchan.xyz/todo/",
+            "demoLink": "",
             "skills": ["React.js", "Node.js", "RESTful API", "PostgreSQL", "AWS - EC2, Route 53", "Docker", "Nginx", "SSL"],
             "type": "project"
         },
@@ -16,6 +17,7 @@
             "timeline": "May 2024",
             "thumbnail": "gooseThumbnail",
             "link": "http://holiday-checker.s3-website.us-east-2.amazonaws.com/",
+            "demoLink": "",
             "skills": ["React.js", "AWS - S3", "SCSS"],
             "type": "project"
         },
@@ -25,6 +27,7 @@
             "timeline": "April 2024 - May 2024",
             "thumbnail": "baseballThumbnail",
             "link": "http://baseball-stats-bucket.s3-website.us-east-2.amazonaws.com/",
+            "demoLink": "",
             "skills": ["React.js", "Redux", "AWS - S3", "Node.js", "RESTful API", "JWT", "MongoDB", "Python"],
             "type": "project"
         }

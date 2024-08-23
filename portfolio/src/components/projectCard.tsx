@@ -9,6 +9,7 @@ interface ProjectCardProps {
     timeline: string,
     thumbnail: string,
     link: string,
+    demoLink: string,
     skills: string[],
     type: string
 }
@@ -21,7 +22,7 @@ const images: { [key:string]: string} = {
     'baseballThumbnail': require('./../figures/baseball-stats-thumbnail.png'),
 }
 
-const ProjectCard = ( { title, description, timeline, thumbnail, link, skills, type}: ProjectCardProps ) => {
+const ProjectCard = ( { title, description, timeline, thumbnail, link, demoLink, skills, type }: ProjectCardProps ) => {
 
     const [isHovered, setIsHovered] = useState<boolean>(false);
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -45,18 +46,11 @@ const ProjectCard = ( { title, description, timeline, thumbnail, link, skills, t
         }
     }
 
-    // function closeModal(): void {
-    //     setIsOpenModal(false);
-    // }
-
     function openInNewTab(): void {
-        // console.log("")
         window.open(link, "_blnk", "noreferrer");
     }
 
-    return (
-        // <div className='projectContainer' onClick={() => openInNewTab()}>
-        
+    return (        
         <>
             <div className='projectContainer'  onClick={openModal}>
                 <div className={isHovered ? 'projectCard-hovered' : 'projectCard'} 
@@ -79,7 +73,7 @@ const ProjectCard = ( { title, description, timeline, thumbnail, link, skills, t
                 </div>
             </div>
             { isModalOpen ? 
-                <Modal modalToggle={setIsModalOpen} openLink={openInNewTab}/>
+                <Modal modalToggle={setIsModalOpen} openLink={openInNewTab} demoLink={demoLink}/>
                 : 
                 null
             }
