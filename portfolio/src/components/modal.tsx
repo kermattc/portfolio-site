@@ -1,5 +1,6 @@
 import './../styles/modal.css';
 import { AiOutlineClose } from "react-icons/ai";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { useRef, useEffect } from 'react';
 
@@ -43,13 +44,18 @@ const Modal = ({ modalToggle, openLink }: ModalProps) => {
                 <div className='titleContainer'>
                     <h1 className="modalTitle">Preview Demo</h1>
                 </div>
-                <div className='body'/>
+                <div className='body'>
+                    <div className="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowFullScreen></iframe>
+                    </div>    
+                </div>
                 <div className="footer">
                     <button className='cancelBtn' onClick={() => modalToggle(false)}>Cancel</button>
                     <button className='goBtn' onClick={openLink}>Open Link</button>
                 </div>
             </div>
         </div>
+
     )
 }
 
