@@ -1,21 +1,51 @@
-import './../App.css';
+import './../styles/modal.css';
+
+import React, { useRef, useEffect } from 'react';
 
 interface ModalProps {
     modalToggle: (isModalOpen: boolean) => void,
+    openLink: () => void
 }
 
-const Modal = ({ modalToggle }: ModalProps) => {
+const Modal = ({ modalToggle, openLink }: ModalProps) => {
+    const modalRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            // basically checks if a mouseclick is outside of the ref. If such thing happens, then remove this modal
+                // .current property points to the DOM element. Basically checks if it exists, or that it is not null. it is needed to use the other if statement thanks to typescript
+                // ... .contains(event.target as Node) checks if the event.target, being a mouseclick, is NOT inside the ref. 
+            if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+                // console.log("Clicked outside of modal");
+                modalToggle(false);
+            }
+        }
+
+        // bind event listener to the document when the component is mounted
+        document.addEventListener("mousedown", handleClickOutside);
+
+        // cleanup function. called when the dependency changes, or in this case when I want to unmount this modal component. Which in this case will always change to false
+        return () => {
+            // unbind event listener on clean up, prevent memory leaks and all that
+            document.removeEventListener("mousedown", handleClickOutside)
+        }
+
+    }, [modalToggle])
+
     return (
-        // <div className='modalBackground' onClick={(e) => e.stopPropagation()}>
         <div className='modalBackground'>
-            <div className='modalContainer'>
-                <button onClick={(e) => {
+            <div className='modalContainer' ref={modalRef}>
+                <button onClick={() => {
                     console.log("Closing modal...");
                     modalToggle(false);
                 }}> 
                     X 
                 </button>
-                <div className='test'>Test content</div>
+                <div className='test'>Modal stuff here</div>
+                <div className="footer">
+                    <button onClick={() => modalToggle(false)}>Cancel</button>
+                    <button onClick={openLink}>Open Link</button>
+                </div>
             </div>
         </div>
     )

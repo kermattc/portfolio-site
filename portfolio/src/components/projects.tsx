@@ -9,7 +9,8 @@ interface Project {
     timeline: string,
     thumbnail: string,
     link: string,
-    skills: string[]
+    skills: string[],
+    type: string
 }
 
 const projects: Project[] = projectData.projects;
@@ -31,6 +32,7 @@ export default function Projects() {
                             thumbnail={project.thumbnail}
                             link={project.link}
                             skills={project.skills}
+                            type={project.type}
                         />
                     )
                 })

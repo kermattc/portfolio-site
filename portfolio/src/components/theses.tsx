@@ -9,7 +9,8 @@ interface Project {
     timeline: string,
     thumbnail: string,
     link: string,
-    skills: string[]
+    skills: string[],
+    type: string
 }
 
 const theses: Project[] = thesisData.theses;
@@ -29,6 +30,7 @@ export default function Theses() {
                             thumbnail={thesis.thumbnail}
                             link={thesis.link}
                             skills={thesis.skills}
+                            type={thesis.type}
                         />
                     )
                 })
