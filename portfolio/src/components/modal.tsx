@@ -1,6 +1,7 @@
 import './../styles/modal.css';
+import { AiOutlineClose } from "react-icons/ai";
 
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 
 interface ModalProps {
     modalToggle: (isModalOpen: boolean) => void,
@@ -35,16 +36,17 @@ const Modal = ({ modalToggle, openLink }: ModalProps) => {
     return (
         <div className='modalBackground'>
             <div className='modalContainer' ref={modalRef}>
-                <button onClick={() => {
-                    console.log("Closing modal...");
-                    modalToggle(false);
-                }}> 
-                    X 
-                </button>
-                <div className='test'>Modal stuff here</div>
+                <div className='exitBtn'>
+                    <AiOutlineClose className='exitIcon' onClick={() => modalToggle(false)}
+                        />
+                </div>
+                <div className='titleContainer'>
+                    <h1 className="modalTitle">Preview Demo</h1>
+                </div>
+                <div className='body'/>
                 <div className="footer">
-                    <button onClick={() => modalToggle(false)}>Cancel</button>
-                    <button onClick={openLink}>Open Link</button>
+                    <button className='cancelBtn' onClick={() => modalToggle(false)}>Cancel</button>
+                    <button className='goBtn' onClick={openLink}>Open Link</button>
                 </div>
             </div>
         </div>
