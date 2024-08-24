@@ -1,0 +1,93 @@
+.projectCard,
+.projectCard-hovered {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    padding: 1em;
+    width: 100%;
+}
+
+.projectCard {
+    display: flex;
+    border: 0.1em solid transparent; 
+    transition: border-color 0.3s, color 0.2s;
+}
+
+.projectCard-hovered {
+    cursor: pointer;
+    border: 0.1em solid #3366CC; 
+    background-color: rgba(221, 226, 237, 0.1);
+    transition: background-color 0.3s, color 0.2s;
+}
+
+.projectCard-hovered div,
+.projectCard-hovered h2,
+.projectCard-hovered .projectTimeline {
+    color: #99CCFF;
+    background-color: transparent;
+}
+
+
+.projectCard-hovered p {
+    background-color: transparent;
+}
+
+.left-details {
+    width: 100%;
+}
+
+.left-details h2,
+.left-details p,
+.right-details p {
+    margin: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+}
+
+
+.right-details {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+
+.right-details p {
+    padding-bottom: 5%;
+}
+
+
+.thumbnail {
+    width: 165px;
+    /* width: 100%;
+    max-width: 165px; */
+    height: auto;
+    background-color: rgba(51, 102, 204, 0.5);
+    border-radius: 10%;
+    padding: 2%;
+    transition: background-color 0.3s, color 0.2s;
+}
+
+
+.detailsContainer {
+    display: flex;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.skillsNugget {
+    color: #f5f8ff !important;
+    background-color: rgba(51, 102, 204, 0.5) !important;
+    border-radius: 5px;
+    padding: 7px 10px 7px 10px;
+    margin: 10px;
+    font-size: 0.85em;
+}

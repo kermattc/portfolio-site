@@ -1,0 +1,35 @@
+{
+    "projects": [ 
+        {
+            "title" : "TODO Web App",
+            "description": "Full stack web app for adding, editing and deleting todo reminders. The backend is built using Node.js, utilizing a PostgreSQL database for CRUD operations. The full web application is deployed on AWS EC2 for public access. Lastly I containerized the frontend, backend and database via Docker. The frontend is based off of a tutorial from freecodecamp.",
+            "timeline": "June 2024",
+            "thumbnail": "perntodoThumbnail",
+            "link": "https://mattkchan.xyz/todo/",
+            "demoLink": "",
+            "skills": ["React.js", "Node.js", "RESTful API", "PostgreSQL", "AWS - EC2, Route 53", "Docker", "Nginx", "SSL"],
+            "type": "project"
+        },
+     
+        {
+            "title" : "Holiday Checker",
+            "description" : "Frontend only web app that displays the upcoming Canadian holiday. Implemented via single component and I added over-the-top styling for memorable user experience.",
+            "timeline": "May 2024",
+            "thumbnail": "gooseThumbnail",
+            "link": "http://holiday-checker.s3-website.us-east-2.amazonaws.com/",
+            "demoLink": "",
+            "skills": ["React.js", "AWS - S3", "SCSS"],
+            "type": "project"
+        },
+        {
+            "title" : "Baseball Stats Website",
+            "description" : "My first full stack web app. Fetches and displays selected player baseball data from public API, front-end deployed on AWS S3 storage. Back-end includes login session via JWT.",
+            "timeline": "April 2024 - May 2024",
+            "thumbnail": "baseballThumbnail",
+            "link": "http://baseball-stats-bucket.s3-website.us-east-2.amazonaws.com/",
+            "demoLink": "",
+            "skills": ["React.js", "Redux", "AWS - S3", "Node.js", "RESTful API", "JWT", "MongoDB", "Python"],
+            "type": "project"
+        }
+    ]
+}
