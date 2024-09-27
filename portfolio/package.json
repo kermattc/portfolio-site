@@ -12,7 +12,6 @@
     "@types/react-dom": "^18.3.0",
     "bootstrap": "^5.3.3",
     "https-browserify": "^1.0.0",
-    "node-polyfill-webpack-plugin": "^4.0.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
@@ -50,6 +49,5 @@
   "devDependencies": {
     "@types/smoothscroll-polyfill": "^0.3.4",
     "ajv": "^8.16.0"
-  },
-  "proxy": "https://3.147.205.125/"
+  }
 }
