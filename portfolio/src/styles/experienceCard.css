@@ -16,6 +16,7 @@ h2 {
 
 .experienceHeader > h2, .experienceHeader > p {
     color: #99CCFF;
+    margin-top: 20px;
 }
 
 .experienceItem  {
