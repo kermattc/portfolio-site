@@ -1,5 +1,25 @@
 {
-    "projects": [ 
+    "projects": [
+        {
+            "title" : "Full-Stack Web App built with Angular and Spring Boot",
+            "description": "Full-stack web application for finding electric guitars using a keyword-search. The backend is developed using Java & Spring Boot and connects with a database using PostgreSQL. To ensure fast search speeds, I used JPA queries to optimize database searches. The frontend is developed using Angular and TypeScript. As for deployment, everything is done using AWS. Starting with my backend, I used Docker to containerize my backend and create an image, then I used ECS to deploy it and API Gateway to provide an https connection. For my frontend, I used S3 for static web hosting and CloudFront for an https connection. Lastly my database is hosted on RDS.", 
+            "timeline": "December 2024",
+            "thumbnail": "guitarLookupThumbnail",
+            "link": "https://d3v8d7zaba9elv.cloudfront.net/",
+            "demoLink": "",
+            "skills": ["Spring Boot", "Java", "RESTful API", "Docker", "Angular", "TypeScript", "PostgreSQL", "S3", "CloudFront", "ECS", "API Gateway", "RDS", "SCSS"],
+            "type": "project"
+        },
+        {
+            "title" : "Full-Stack Portfolio Website developed with React and Node.js",
+            "description": "This website itself - a full stack web app showcasing my professional bakground with a stylized layout for enhanced user experience. The frontend is developed using Read.js and I developed a RESTful API for the backend using Node.js & Express. I used AWS EC2 to deploy both my frontend and backend. For the frontend, I set up Nginx to keep it running smoothly, and for my backend, I used systemd to ensure it stays up and running. I also used Route 53 to give my portfolio site a custom domain name and Let's Encrypt to generate a SSL certificate so I can ensure a secure connection. ",
+            "timeline": "June 2024",
+            "thumbnail": "portfolioThumbnail",
+            "link": "https://mattkchan.xyz/todo/",
+            "demoLink": "",
+            "skills": ["React.js", "Node.js", "Express", "RESTful API", "EC2, Route 53", "Nginx", "SSL"],
+            "type": "project"
+        },
         {
             "title" : "TODO Web App",
             "description": "Full stack web app for adding, editing and deleting todo reminders. The backend is built using Node.js, utilizing a PostgreSQL database for CRUD operations. The full web application is deployed on AWS EC2 for public access. Lastly I containerized the frontend, backend and database via Docker. The frontend is based off of a tutorial from freecodecamp.",
@@ -7,7 +27,7 @@
             "thumbnail": "perntodoThumbnail",
             "link": "https://mattkchan.xyz/todo/",
             "demoLink": "",
-            "skills": ["React.js", "Node.js", "RESTful API", "PostgreSQL", "AWS - EC2, Route 53", "Docker", "Nginx", "SSL"],
+            "skills": ["React.js", "Node.js", "RESTful API", "PostgreSQL", "EC2,", "Route 53", "Docker"],
             "type": "project"
         },
      

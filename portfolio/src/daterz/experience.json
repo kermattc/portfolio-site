@@ -1,26 +1,31 @@
 {
     "experience": [
         {
-            "title" : "Research Associate",
-            "descriptions": ["Managed data-gathering experiments, directed planning and execution of experiments to ensure accuracy and efficiency.", "Provided clear instructions and requirements to participants, ensuring smooth operation of experiments.", "Coordinated scheduling and maintained clear, effective ongoing communication to streamline workflow."],
+            "title" : "Research Associate at Ontario Tech University",
+            "descriptions": ["• Coordinated experiments to assess an LLM integrated with a gaze-driven model for enhancing technical video understanding.", "• Reviewed critical recorded data to ensure accuracy, and reliability while providing value-add feedback for subsequent analysis.", "• Managed participant scheduling and logistics to enable seamless, high-quality data collection."],
             "timeline": "June 2024 - August 2024"
         },
 
         {
-            "title" : "Research Assistant",
-            "descriptions": ["Developed a mobile augmented reality data visualization application for iPhone and iPad using Swift and XCode, enabling a guided data exploration experience.", "Collaborated with team of researchers to define objectives and implemented features within deadlines, ensuring effective communication and timely delivery."],
+            "title" : "Research Assistant at Ontario Tech University",
+            "descriptions": ["• Developed a mobile augmented reality data visualization application for iPhone and iPad using Swift and XCode, enabling a guided data exploration experience.", "• Collaborated with team of researchers to define objectives and implemented features within deadlines, ensuring effective communication and timely delivery."],
             "timeline": "May 2021 - August 2021"
         },
      
         {
-            "title" : "Teaching Assistant",
-            "descriptions" : ["Developed and presented code and demos for multiple lab sessions, taught classes of 20-30 students in programming and software development concepts. Provided on-call support to minimize student wait times for queries.", "Evaluated midterms, assignments and weekly lab tasks, ensuring timely return of grades and offering constructive feedback to help students improve.", "Assisted in courses including Programming Workshop (introductory C++ course), Web Application Development, Software Quality Assurance and Mobile Devices (Mobile application Development)"],
+            "title" : "Teaching Assistant at Ontario Tech University",
+            "descriptions": ["• Instructed courses on Web Development, Software Quality Assurance, Mobile App Development, while teaching practical skills.", "• Developed lab programs that increased participant comprehension, boosting performance by ~20% across 4 classes.", "• Conducted code reviews and one-on-one sessions to help students refine problem-solving and coding practices.", "• Resolved technical issues for 100+ learners, ensuring smooth learning through debugging and support."],
             "timeline": "September 2021 - December 2022"
         },
         {
-            "title" : "IT Deskside Support",
-            "descriptions" : ["Assisted clients with tech support in company building, communicated in person, phone call and email. Ensured client systems kept running and continuously through maintenance and responsive technical assistance in a customer support role.", "Collaborated with multiple departments to troubleshoot and resolve complex technical challenges, such as diagnosing and repairing a damaged wire impacting elevator screen updates due to construction.", "Managed and optimized electronic hardware inventory to minimize wait times for clients to ensure productivity."],
+            "title" : "IT Deskside Support at Toronto Hydro",
+            "descriptions": ["• Consulted clients and translated complex technical issues into clear solutions to provide client support, resolving tickets.", "• Recommended efficient, cost-effective hardware stock levels by analyzing inventory and building requirements.", "• Troubleshooted computer systems and provided tech support to ensure prompt issue resolution and minimize downtime.", "• Collaborated with IT teams to leverage collective expertise in accurately diagnosing and resolving client-facing issues.", "• Surpassed KPIs for response time with clear communication on ticket progress, ensuring responses within 1-2 hours."],
             "timeline": "September 2019 - August 2020"
+        },
+        {
+            "title" : "Waiter at Swiss Chalet",
+            "descriptions" : ["• Ensured customer satisfaction by delivering attentive hospitality and promptly delivering food, beverages and desserts and addressed customer concerns with thoughtful solutions, ensuring an enjoyable dining experience.", "• Collaborated with with coworker to provide timely assistance while thriving in high-pressure environments during peak hours, managed multiple tasks and maintained compsure.", "• Asssisted with opening and closing tasks, including cleaning and organizing the restaurant."],
+            "timeline": "July 2018- February 2020"
         }
     ]
 }

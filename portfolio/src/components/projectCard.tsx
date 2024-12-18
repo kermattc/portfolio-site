@@ -20,6 +20,10 @@ const images: { [key:string]: string} = {
     'perntodoThumbnail': require('./../figures/perntodo-thumbnail.png'),
     'gooseThumbnail': require('./../figures/goose-thumbnail.png'),
     'baseballThumbnail': require('./../figures/baseball-stats-thumbnail.png'),
+    'guitarLookupThumbnail': require('./../figures/guitar-lookup-thumbnail.png'),
+    'portfolioThumbnail': require('./../figures/portfolio-thumbnail.png'),
+
+
 }
 
 const ProjectCard = ( { title, description, timeline, thumbnail, link, demoLink, skills, type }: ProjectCardProps ) => {
