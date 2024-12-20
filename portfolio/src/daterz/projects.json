@@ -12,7 +12,7 @@
         },
         {
             "title" : "Full-Stack Portfolio Website developed with React and Node.js",
-            "description": "This website itself - a full stack web app showcasing my professional bakground with a stylized layout for enhanced user experience. The frontend is developed using Read.js and I developed a RESTful API for the backend using Node.js & Express. I used AWS EC2 to deploy both my frontend and backend. For the frontend, I set up Nginx to keep it running smoothly, and for my backend, I used systemd to ensure it stays up and running. I also used Route 53 to give my portfolio site a custom domain name and Let's Encrypt to generate a SSL certificate so I can ensure a secure connection. ",
+            "description": "This website itself - a full stack web app showcasing my professional bakground with a stylized layout for enhanced user experience. The frontend is developed using React.js and I developed a RESTful API for the backend using Node.js & Express. I used AWS EC2 to deploy both my frontend and backend. For the frontend, I set up Nginx to keep it running smoothly, and for my backend, I used systemd to ensure it stays up and running. I also used Route 53 to give my portfolio site a custom domain name and Let's Encrypt to generate a SSL certificate so I can ensure a secure connection. ",
             "timeline": "June 2024",
             "thumbnail": "portfolioThumbnail",
             "link": "https://mattkchan.xyz/todo/",
