@@ -1,5 +1,7 @@
 .projectCard,
-.projectCard-hovered {
+.projectCard-hovered,
+.portfolioCard,
+.portfolioCard-hovered {
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -8,7 +10,7 @@
     width: 100%;
 }
 
-.projectCard {
+/* .projectCard {
     display: flex;
     border: 0.1em solid transparent; 
     transition: border-color 0.3s, color 0.2s;
@@ -17,7 +19,6 @@
 .projectCard-hovered {
     cursor: pointer;
     border: 0.1em solid #3366CC; 
-    background-color: rgba(221, 226, 237, 0.1);
     transition: background-color 0.3s, color 0.2s;
 }
 
@@ -26,10 +27,41 @@
 .projectCard-hovered .projectTimeline {
     color: #99CCFF;
     background-color: transparent;
+} */
+
+.projectCard
+.portfolioCard {
+    display: flex;
+    border: 0.1em solid transparent; 
+    transition: border-color 0.3s, color 0.2s;
+}
+
+.projectCard-hovered {
+    cursor: pointer;
+}
+
+.projectCard-hovered,
+.portfolioCard-hovered {
+    border: 0.1em solid #3366CC; 
+    transition: background-color 0.3s, color 0.2s;
 }
 
 
-.projectCard-hovered p {
+.projectCard-hovered div,
+.projectCard-hovered h2,
+.projectCard-hovered,
+.projectTimeline,
+.portfolioCard-hovered div,
+.portfolioCard-hovered h2,
+.portfolioCard-hovered .projectTimeline {
+    color: #99CCFF;
+    background-color: transparent;
+}
+
+
+.projectCard-hovered p,
+.portfolioCard-hovered p {
+
     background-color: transparent;
 }
 
@@ -90,4 +122,18 @@
     padding: 7px 10px 7px 10px;
     margin: 10px;
     font-size: 0.85em;
+}
+
+.projectCard .maintenance-notice,
+.projectCard-hovered .maintenance-notice {
+    color: #e64b40;
+}
+
+.notice {
+    text-align: center;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    transition: background-color 0.6s;
+    padding: 5px;
+    border-radius: 15px;
 }

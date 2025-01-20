@@ -72,6 +72,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 2%;
+    align-items: center;
 }
 
 
@@ -96,4 +97,8 @@
     border-color: black;
     color: #3366CC;
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.maintenance-notice {
+    background-color: transparent;
 }
